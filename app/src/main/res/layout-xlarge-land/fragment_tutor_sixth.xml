@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.adscity.smart_house.Tutor_Section.Tutor_sixth">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/BackgroundSixthTutorScreenLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backgroundtutor"
+        app:layout_constraintBottom_toTopOf="@+id/DescriptionSixthTutorScreenLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="220sp"
+            android:layout_height="220sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/firetutor" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/DescriptionSixthTutorScreenLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackgroundSixthTutorScreenLayout">
+
+        <TextView
+            android:id="@+id/fireSystemScreenTutorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/fire_system"
+            android:textColor="@color/main_black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NameProjectSixthScreenTutorTextView" />
+
+        <TextView
+            android:id="@+id/NameProjectSixthScreenTutorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/smart_home_help"
+            android:textColor="@color/main_black"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descriptionSixthScreenTutorTextView"
+            android:layout_width="800sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="55sp"
+            android:layout_marginStart="55sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/description_sixth_Screen_tutor"
+            android:textColor="@color/main_black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fireSystemScreenTutorTextView" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

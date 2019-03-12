@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/NoConnectionToBdLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NamePrLayout">
+
+        <Button
+            android:id="@+id/btnRefreshNoConnToBd"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextViewProblemAbout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:background="@color/main_red"
+            android:text="@string/refresh"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            app:srcCompat="@drawable/noconntobdicon" />
+
+        <TextView
+            android:id="@+id/HiWEHaveTheProblemTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:text="@string/hi_we_have_problem"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewProblemAbout"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HiWEHaveTheProblemTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:gravity="center"
+            android:text="@string/about_conn_problem"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/BtnLayout2"
+        android:layout_width="390sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnProtection"
+            android:layout_width="134sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_in_menuoff1"
+            android:text="@string/protection"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnFireSys"
+            android:layout_width="131sp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_in_menuoff1"
+            android:text="@string/fire_system"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnVoice"
+            app:layout_constraintStart_toStartOf="@+id/btnProtection"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnVoice"
+            android:layout_width="134sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_in_menuoff1"
+            android:text="@string/voice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/InformationLayout"
+        android:layout_width="0dp"
+        android:layout_height="270sp"
+        android:background="@drawable/welcome"
+        app:layout_constraintBottom_toTopOf="@+id/NamePrLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnQuestion"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/userimage"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/imageuser"
+            android:contentDescription="@string/log_out"
+            app:srcCompat="@drawable/ic_icon_ask" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/userimage"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/roset" />
+
+        <TextView
+            android:id="@+id/TextCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextNameSurname"
+            android:layout_centerHorizontal="true"
+            android:text="Город Челябинск"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TextNameSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userimage"
+            android:layout_centerHorizontal="true"
+            android:text="Никита Задемидько"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnRefresh"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/userimage"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/imageuser"
+            app:srcCompat="@drawable/ic_icon_refresh" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btnQuestion" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/NamePrLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InformationLayout">
+
+        <TextView
+            android:id="@+id/nameProjectTextView"
+            android:layout_width="300sp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/nameProject"
+            android:textColor="@color/main_black"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/btnSetting"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12sp"
+            android:layout_toEndOf="@+id/nameProjectTextView"
+            android:background="@null"
+            android:contentDescription="@string/log_out"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_menu_settings"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="270dp" />
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/BtnLayout1"
+        android:layout_width="390sp"
+        android:layout_height="45sp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NamePrLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnLight"
+            android:layout_width="131sp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_in_menuoff1"
+            android:text="@string/light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnDevices"
+            app:layout_constraintStart_toStartOf="@+id/btnSensors"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnDevices"
+            android:layout_width="134sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_in_menuoff1"
+            android:text="@string/devices"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnSensors"
+            android:layout_width="134sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_in_menuon"
+            android:text="@string/Sensors"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/MenuLayout"
+        android:layout_width="0dp"
+        android:layout_height="220sp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLayout1"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Light_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Switch
+                android:id="@+id/automaticSwitch"
+                style="@style/SwitchCompatStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="444dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:switchMinWidth="50sp"
+                android:theme="@style/SwitchCompatTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/automaticEnDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="444dp"
+                android:text="@string/Manual"
+                android:textColor="@color/main_black"
+                android:textSize="19sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/automaticSwitch" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chooseColor"
+                android:layout_width="180sp"
+                android:layout_height="180sp"
+                android:layout_marginBottom="26dp"
+                android:layout_marginEnd="444dp"
+                android:layout_marginTop="26dp"
+                android:background="@color/main_red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hum_temp" />
+
+            <Button
+                android:id="@+id/btnSetColor"
+                android:layout_width="170sp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="444dp"
+                android:background="@drawable/hum_temp"
+                android:text="@string/set_color"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/controlLightEnDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="444dp"
+                android:text="@string/Disabled_light"
+                android:textColor="@color/main_black"
+                android:textSize="19sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/controlSwitch" />
+
+            <Switch
+                android:id="@+id/controlSwitch"
+                style="@style/SwitchCompatStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="444dp"
+                android:layout_marginTop="15dp"
+                android:switchMinWidth="50sp"
+                android:theme="@style/SwitchCompatTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/automaticEnDis" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Voice_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iconVoice"
+                android:layout_width="110sp"
+                android:layout_height="110sp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/log_out"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/voiceoff" />
+
+            <Switch
+                android:id="@+id/voiceSwitch"
+                style="@style/SwitchCompatStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:switchMinWidth="50sp"
+                android:theme="@style/SwitchCompatTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconVoice" />
+
+            <TextView
+                android:id="@+id/voiceEnDis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:gravity="center"
+                android:text="@string/Disabled"
+                android:textColor="@color/main_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/voiceSwitch" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/voiceCommandLayout"
+                android:layout_width="300sp"
+                android:layout_height="35sp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/hum_temp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/voiceEnDis">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/log_out"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/iconvoice" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/Voice_command"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.461" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/FireSystem_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iconFireSystem"
+                android:layout_width="110sp"
+                android:layout_height="110sp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/log_out"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_menu_fire_system_off" />
+
+            <Switch
+                android:id="@+id/fireSystemSwitch"
+                style="@style/SwitchCompatStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:switchMinWidth="50sp"
+                android:theme="@style/SwitchCompatTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconFireSystem" />
+
+            <TextView
+                android:id="@+id/fireDisEn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Disabled"
+                android:textColor="@color/main_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireSystemSwitch" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/warningfireLayout"
+                android:layout_width="390sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/hum_temp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireDisEn">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="28sp"
+                    android:layout_height="28sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/log_out"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/warning" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:text="@string/fire"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.421"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.489" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Protection_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iconProtection"
+                android:layout_width="110sp"
+                android:layout_height="110sp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/log_out"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_menu_protection_system_off" />
+
+            <Switch
+                android:id="@+id/protectionSwitch"
+                style="@style/SwitchCompatStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+
+                android:switchMinWidth="50sp"
+                android:theme="@style/SwitchCompatTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconProtection"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/protDisEn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Disabled"
+                android:textColor="@color/main_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/protectionSwitch" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/warningLayout"
+                android:layout_width="390sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/hum_temp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/protDisEn">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="27sp"
+                    android:layout_height="27sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/log_out"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.333"
+                    app:srcCompat="@drawable/warning" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginEnd="71dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:text="@string/warn"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.489" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Devices_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/btnRoset"
+                android:layout_width="160sp"
+                android:layout_height="42sp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="455dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_in_menuoff"
+                android:padding="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RosetLayout"
+                app:srcCompat="@mipmap/buttonoff" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/RosetLayout"
+                android:layout_width="160sp"
+                android:layout_height="150sp"
+                android:layout_marginEnd="455dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/main_red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iconRoset"
+                    android:layout_width="90sp"
+                    android:layout_height="90sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/log_out"
+                    app:layout_constraintBottom_toTopOf="@+id/iconRosetText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_menu_socket" />
+
+                <TextView
+                    android:id="@+id/textViewRoset"
+                    android:layout_width="111dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="@string/Socket"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/VentLayout"
+                android:layout_width="160sp"
+                android:layout_height="150sp"
+                android:layout_marginStart="455dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/main_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iconFan"
+                    android:layout_width="90sp"
+                    android:layout_height="90sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/log_out"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewFan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_menu_fan" />
+
+                <TextView
+                    android:id="@+id/textViewFan"
+                    android:layout_width="111dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="@string/fan"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/btnFan"
+                android:layout_width="160sp"
+                android:layout_height="42sp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="455dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_in_menuoff"
+                android:padding="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/VentLayout"
+                app:srcCompat="@mipmap/buttonoff" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Sensors_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/templayout"
+                android:layout_width="160sp"
+                android:layout_height="150sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="455dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/hum_temp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/temp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.52">
+
+                <ImageView
+                    android:id="@+id/icontemp"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/log_out"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:srcCompat="@drawable/ic_menu_temp" />
+
+                <TextView
+                    android:id="@+id/textViewTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Temperature:"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/icontemp" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/humlayout"
+                android:layout_width="160sp"
+                android:layout_height="150sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="455dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/hum_temp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/hum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iconhum"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/log_out"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:srcCompat="@drawable/ic_menu_hum" />
+
+                <TextView
+                    android:id="@+id/textViewHum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Humid:"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iconhum" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/hum"
+                android:layout_width="160sp"
+                android:layout_height="45sp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="455dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/textmenu"
+                android:gravity="center"
+                android:text="100%"
+                android:textColor="@color/main_black"
+                android:textSize="19sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/humlayout" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="160sp"
+                android:layout_height="45sp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="455dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/textmenu"
+                android:gravity="center"
+                android:text="100*C"
+                android:textColor="@color/main_black"
+                android:textSize="19sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/templayout" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/NoConnLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLayout2"
+        app:layout_constraintVertical_bias="0.1">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/iconnoconntotheinternet" />
+
+        <TextView
+            android:id="@+id/NoInternetConnTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pleaseCjeckConnTextView"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_internet_conn"
+            android:textColor="@color/main_black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pleaseCjeckConnTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnRefreshNoConn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:text="@string/pls_check_conn"
+            android:textColor="@color/main_red"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRefreshNoConn"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="51dp"
+            android:background="@color/main_red"
+            android:gravity="center"
+            android:text="@string/refresh"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/VoiceComandLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLayout2">
+
+
+        <ImageView
+            android:id="@+id/btnVoiceCommand"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/recognize_voice"
+            android:padding="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_iconvoice" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/WaitLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLayout2">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="130dp"
+            android:layout_marginTop="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_icon_menu_background1" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

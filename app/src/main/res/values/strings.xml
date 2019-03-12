@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="developed">Developed by Takers team</string>
+    <string name="welcome">Welcome!</string>
+    <string name="Making">Making your life easier</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="nameProject">Smart Home</string>
+    <string name="login">LOG IN</string>
+    <string name="register">Sign up</string>
+    <string name="Sensors">Sensors</string>
+    <string name="light">Light</string>
+    <string name="devices">Devices</string>
+    <string name="protection">Protection</string>
+    <string name="fail_in_loginActivity">Wrong login or password</string>
+    <string name="check_the_connection_to_the_Internet">check the connection to the Internet</string>
+    <string name="fire_system">Fire System</string>
+    <string name="voice">Voice</string>
+    <string name="warn">The security system has worked!</string>
+    <string name="fire">The fire system has worked!</string>
+    <string name="set_color">Set color</string>
+    <string name="fan">FAN</string>
+    <string name="Socket">ROSET</string>
+    <string name="Enabled">Enabled</string>
+    <string name="Enabled_light">Enabled light</string>
+    <string name="Disabled">Disabled</string>
+    <string name="Disabled_light">Disabled light</string>
+    <string name="Auto">Auto mode</string>
+    <string name="Manual">Manual mode</string>
+    <string name="Voice_command">VOICE COMMAND</string>
+    <string name="Settings">SETTINGS</string>
+    <string name="Account_Information">Account information:</string>
+    <string name="name">Your name:</string>
+    <string name="surname">Your surname:</string>
+    <string name="city">Your city:</string>
+    <string name="apply">Apply</string>
+    <string name="your_key">Your secret key:</string>
+    <string name="change_key">Change key</string>
+    <string name="change_password">Change password:</string>
+    <string name="change_password1">Change password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="Change_secret_key">Change secret key:</string>
+    <string name="Enter_another_secret_key">Enter another secret key:</string>
+    <string name="Enter_password_for_key">Enter password for key:</string>
+    <string name="change_language">Change language:</string>
+    <string name="language_ru">RU</string>
+    <string name="language_en">EN</string>
+    <string name="log_out">Log out</string>
+    <string name="registration">Registration</string>
+    <string name="username_registration">Username:</string>
+    <string name="email_registration">Email:</string>
+    <string name="password_registration">Password:</string>
+    <string name="password_confirm_registration">Confirm password:</string>
+    <string name="name_register">Your name:</string>
+    <string name="surname_register">Your surname:</string>
+    <string name="city_register">Your city:</string>
+    <string name="back">Back</string>
+    <string name="no_internet_conn">No Internet connection</string>
+    <string name="pls_check_conn">Please check your connection.</string>
+    <string name="refresh">Refresh</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="hi_we_have_problem">Hi, we have the problem!</string>
+    <string name="about_conn_problem">Sorry, but we did not receive data from your smart home.</string>
+    <string name="smart_home_help">Smart Home Help</string>
+    <string name="description_first_screen_tutor"> You can control your home in this app.</string>
+    <string name="description_second_Screen_tutor"> You can see temperatures and humidity values
+    which are transmitted by the sensors in your home.</string>
+    <string name="description_second_Screen_tutor2"> Information about the temperature and humidity is updated every 4 seconds.</string>
+    <string name="description_third_Screen_tutor"> You can control two light modes (Automatic and Manual),
+you can turn on and turn off light and also you can set color which you want. </string>
+    <string name="description_fourth_Screen_tutor">  You can control different devices, which are connected to
+    the Smart Home. If the fire system works, all devices will be turned off.</string>
+    <string name="description_fifth_Screen_tutor"> You can control security system in your home.
+    The system polls the motion sensor. If the system works, you will receive an alert immediately.</string>
+    <string name="description_sixth_Screen_tutor"> You can control fire system in your home.
+    The system always polls the carbon dioxide sensor. If the fire system works, you will receive an alert immediately.</string>
+    <string name="description_seventh_Screen_tutor"> You can control voice system in your home, which
+will inform you about the condition of the house every 5 minutes.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_eighth_Screen_tutor"> Thanks for your choice. \n We wish you pleasant use.</string>
+    <string name="command_for_voice">Command for voice:</string>
+    <string name="commands">1) Turn off/on protection \n
+    2) Turn off/on fire system \n
+    3) Turn off/on voice notification \n
+    4) Turn off/on fan \n
+    5) Turn off/on socket</string>
+    <string name="report_a_bug">Report a bug</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="welcome_first_fragment">Это приложение поможет Вам управлять умным домом</string>
+    <string name="welcome_second_fragment">Управляйте домом в один клик</string>
+    <string name="welcome_third_fragment">Редактируйте свои данные в настройках</string>
+    <string name="welcome_fourth_fragment">Поддерживаем русский и английский языки</string>
+    <string name="welcome_fifth_fragment">Быстрая авторизация с помощью Google+ или QR-кода</string>
+
+</resources>

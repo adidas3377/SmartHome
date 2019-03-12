@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".Activities.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/MainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="700sp">
+
+        <RelativeLayout
+            android:id="@+id/InformationLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="375sp"
+            android:background="@drawable/welcome2"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textNameSurnameSetttings2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_above="@+id/textCitySettings2"
+                android:layout_centerHorizontal="true"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textCitySettings2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/SettingsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="@string/Settings"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="normal"
+                android:layout_centerInParent="true"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iconUserSettings2"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_above="@+id/textNameSurnameSetttings2"
+                android:layout_alignEnd="@+id/SettingsTextView"
+                android:layout_marginBottom="14dp"
+                android:layout_centerInParent="true"/>
+
+            <ImageButton
+                android:id="@+id/ImageBack"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_alignBottom="@+id/SettingsTextView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+                android:background="@drawable/imageuser"
+                app:srcCompat="@drawable/ic_register_back" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/InformationLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/InformationLayout1"
+            android:layout_marginTop="0sp">
+
+            <TextView
+                android:id="@+id/ChangeLanguageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnChangeKey"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:gravity="center"
+                android:text="@string/change_language"
+                android:textColor="@color/main_black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnChangeKey"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:layout_alignStart="@+id/btnShowChangeKey"
+                android:layout_below="@+id/editTextPasswordForKey"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="110sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinsettings"
+                android:paddingBottom="1sp"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:paddingTop="1sp"
+                android:text="@string/change_key"
+                android:textColor="@color/main_black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextPasswordForKey"
+                android:layout_width="700sp"
+                android:layout_height="50sp"
+                android:layout_alignStart="@+id/PasswordForKeyTextView"
+                android:layout_below="@+id/PasswordForKeyTextView"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginEnd="30sp"
+                android:background="@drawable/textinsettings"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:padding="10sp" />
+
+            <TextView
+                android:id="@+id/PasswordForKeyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editTextAnotherKey"
+                android:layout_below="@+id/editTextAnotherKey"
+                android:layout_marginTop="13dp"
+                android:text="@string/Enter_password_for_key"
+                android:textColor="@color/main_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextAnotherKey"
+                android:layout_width="700sp"
+                android:layout_height="50sp"
+                android:layout_alignStart="@+id/AnotherSecretKeyTextView"
+
+                android:layout_below="@+id/AnotherSecretKeyTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="30sp"
+                android:background="@drawable/textinsettings"
+                android:ems="10"
+                android:inputType="numberPassword"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/AnotherSecretKeyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editTextNewPassword"
+                android:layout_below="@+id/ChangeSecretKeyTextView"
+                android:layout_marginTop="15dp"
+                android:text="@string/Enter_another_secret_key"
+                android:textColor="@color/main_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/editTextNewPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="95sp"
+                android:layout_marginStart="95sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinsettings"
+                android:paddingBottom="1sp"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:paddingTop="1sp"
+                android:text="@string/change_password1"
+                android:textSize="20sp"
+                android:textColor="@color/main_black" />
+
+            <TextView
+                android:id="@+id/ChangeSecretKeyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btnChangePassword"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/Change_secret_key"
+                android:textColor="@color/main_black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNewPassword"
+                android:layout_width="700sp"
+                android:layout_height="50sp"
+                android:layout_alignStart="@+id/NewPasswordTextView"
+                android:layout_below="@+id/NewPasswordTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="30sp"
+                android:background="@drawable/textinsettings"
+                android:ems="10"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:padding="10sp" />
+
+            <TextView
+                android:id="@+id/NewPasswordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editTextOldPassword"
+                android:layout_below="@+id/editTextOldPassword"
+                android:layout_marginTop="15dp"
+                android:text="@string/new_password"
+                android:textColor="@color/main_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextOldPassword"
+                android:layout_width="700sp"
+                android:layout_height="50sp"
+                android:layout_alignStart="@+id/passwordLoginTextView"
+                android:layout_below="@+id/passwordLoginTextView"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="30sp"
+                android:background="@drawable/textinsettings"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/passwordLoginTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/changeCity"
+                android:layout_below="@+id/ChangePasswordTextView"
+                android:layout_marginTop="15dp"
+                android:text="@string/old_password"
+                android:textColor="@color/main_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/changeCity"
+                android:layout_width="700dp"
+                android:layout_height="50sp"
+                android:layout_below="@+id/YourCityTextView"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="30sp"
+                android:layout_marginStart="30sp"
+                android:background="@drawable/textinsettings"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/YourCityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/changeSurname"
+                android:layout_below="@+id/changeSurname"
+                android:layout_marginTop="10dp"
+                android:text="@string/city"
+                android:textColor="@color/main_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/changeSurname"
+                android:layout_width="700sp"
+                android:layout_height="50sp"
+                android:layout_below="@+id/YourSurNmaeTextView"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="30sp"
+                android:layout_marginStart="30sp"
+                android:background="@drawable/textinsettings"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/YourSurNmaeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/changeName"
+                android:layout_below="@+id/changeName"
+                android:layout_marginTop="10dp"
+                android:text="@string/surname"
+                android:textColor="@color/main_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/AccountInformationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="@string/Account_Information"
+                android:textColor="@color/main_black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/YourNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/changeName"
+                android:layout_below="@+id/AccountInformationTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/name"
+                android:textColor="@color/main_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/changeName"
+                android:layout_width="700dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/YourNameTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="30sp"
+                android:layout_marginStart="30sp"
+                android:background="@drawable/textinsettings"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/btnApplyCityNameSurname"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/changeCity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="110sp"
+                android:layout_marginStart="110sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinsettings"
+                android:text="@string/apply"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/YourSecretKeyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_below="@+id/btnApplyCityNameSurname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/your_key"
+                android:textColor="@color/main_black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textKeySettings"
+                android:layout_width="500sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/YourSecretKeyTextView"
+                android:layout_toEndOf="@+id/YourNameTextView"
+                android:background="@drawable/button_in_menuon"
+                android:gravity="center"
+                android:paddingBottom="5sp"
+                android:paddingLeft="30sp"
+                android:paddingRight="30sp"
+                android:paddingTop="5sp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnShowChangeKey"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/textKeySettings"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="110sp"
+                android:layout_marginStart="110sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinsettings"
+                android:paddingBottom="1sp"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:paddingTop="1sp"
+                android:text="@string/change_key"
+                android:textSize="20sp"
+                android:textColor="@color/main_black" />
+
+            <TextView
+                android:id="@+id/ChangePasswordTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnShowChangeKey"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="@string/change_password"
+                android:textColor="@color/main_black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnlanguageRU"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_alignStart="@+id/btnChangeKey"
+                android:layout_below="@+id/ChangeLanguageTextView"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/textinsettings"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="20sp"
+                android:text="@string/language_ru" />
+
+            <Button
+                android:id="@+id/btnlanguageEN"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_alignBaseline="@+id/btnlanguageRU"
+                android:layout_alignBottom="@+id/btnlanguageRU"
+                android:layout_alignEnd="@+id/btnChangeKey"
+                android:background="@drawable/textinsettings"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="20sp"
+                android:text="@string/language_en" />
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:layout_alignStart="@+id/btnlanguageRU"
+                android:layout_below="@+id/btnlanguageRU"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="50sp"
+                android:background="@color/black"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="20sp"
+                android:text="@string/log_out"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context="ru.adscity.smart_house.Activities.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="830sp">
+
+
+        <TextView
+            android:id="@+id/RegistrationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:text="@string/registration"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+        <View
+            android:id="@+id/viewEnterLogin"
+            android:layout_width="300sp"
+            android:layout_height="1sp"
+            android:layout_alignBottom="@+id/EditTextLogin"
+            android:layout_alignStart="@+id/EditTextLogin"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/emailRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/EditTextLogin"
+            android:layout_below="@+id/EditTextLogin"
+            android:layout_marginTop="20sp"
+            android:text="@string/email_registration"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/EditTextLogin"
+            android:layout_width="300sp"
+            android:layout_height="35sp"
+            android:layout_below="@+id/usernameRegisterTextView"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_password_drawable"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your username..."
+            android:inputType="textPersonName"
+            android:labelFor="@+id/EditTextLogin"
+            android:textColor="@color/white"
+            android:textColorHint="#ededed"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="300sp"
+            android:layout_height="1sp"
+            android:layout_alignBottom="@+id/emailRegister"
+            android:layout_alignStart="@+id/emailRegister"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/usernameRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/EditTextLogin"
+            android:layout_below="@+id/RegistrationTextView"
+            android:layout_marginTop="50sp"
+            android:text="@string/username_registration"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/emailRegister"
+            android:layout_width="300sp"
+            android:layout_height="35sp"
+            android:layout_alignStart="@+id/emailRegisterTextView"
+            android:layout_below="@+id/emailRegisterTextView"
+            android:background="@drawable/login_password_drawable"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your email..."
+            android:inputType="textEmailAddress"
+            android:labelFor="@+id/EditTextLogin"
+            android:textColor="@color/white"
+            android:textColorHint="#ededed"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/passwordRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/view1"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="20sp"
+            android:text="@string/password_registration"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/passwordRegister"
+            android:layout_width="300sp"
+            android:layout_height="35sp"
+            android:layout_alignStart="@+id/passwordRegisterTextView"
+            android:layout_below="@+id/passwordRegisterTextView"
+            android:background="@drawable/login_password_drawable"
+            android:ems="10"
+
+            android:gravity="center"
+            android:hint="Enter your password..."
+            android:inputType="textPassword"
+            android:labelFor="@+id/EditTextLogin"
+            android:textColor="@color/white"
+            android:textColorHint="#ededed"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="300sp"
+            android:layout_height="1sp"
+            android:layout_alignBottom="@+id/passwordRegister"
+            android:layout_alignStart="@+id/passwordRegister"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/passwordConfirmRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/passwordRegister"
+            android:layout_below="@+id/passwordRegister"
+            android:layout_marginTop="20sp"
+            android:text="@string/password_confirm_registration"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/passwordConfirmRegister"
+            android:layout_width="300sp"
+            android:layout_height="35sp"
+            android:layout_alignStart="@+id/passwordConfirmRegisterTextView"
+            android:layout_below="@+id/passwordConfirmRegisterTextView"
+            android:background="@drawable/login_password_drawable"
+            android:ems="10"
+            android:gravity="center"
+
+            android:hint="Enter your password..."
+            android:inputType="textPassword"
+            android:labelFor="@+id/EditTextLogin"
+            android:textColor="@color/white"
+            android:textColorHint="#ededed"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="300sp"
+            android:layout_height="1sp"
+            android:layout_alignStart="@+id/passwordConfirmRegister"
+            android:layout_below="@+id/passwordConfirmRegister"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/nameRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/view3"
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="20sp"
+            android:text="@string/name_register"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/nameRegister"
+            android:layout_width="300sp"
+            android:layout_height="35sp"
+            android:layout_alignStart="@+id/nameRegisterTextView"
+            android:layout_below="@+id/nameRegisterTextView"
+            android:background="@drawable/login_password_drawable"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your name..."
+            android:inputType="text"
+
+            android:labelFor="@+id/EditTextLogin"
+            android:textColor="@color/white"
+            android:textColorHint="#ededed"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="300sp"
+            android:layout_height="1sp"
+            android:layout_alignBottom="@+id/nameRegister"
+            android:layout_alignStart="@+id/nameRegister"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/surnameRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameRegister"
+            android:layout_below="@+id/nameRegister"
+            android:layout_marginTop="20sp"
+            android:text="@string/surname_register"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/surnameRegister"
+            android:layout_width="300sp"
+            android:layout_height="35sp"
+            android:layout_alignStart="@+id/surnameRegisterTextView"
+            android:layout_below="@+id/surnameRegisterTextView"
+            android:background="@drawable/login_password_drawable"
+            android:ems="10"
+            android:gravity="center"
+
+            android:hint="Enter your surname..."
+            android:inputType="text"
+            android:labelFor="@+id/EditTextLogin"
+            android:textColor="@color/white"
+            android:textColorHint="#ededed"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="300sp"
+            android:layout_height="1sp"
+            android:layout_alignBottom="@+id/surnameRegister"
+            android:layout_alignStart="@+id/surnameRegister"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/cityRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/surnameRegister"
+            android:layout_below="@+id/surnameRegister"
+            android:layout_marginTop="20sp"
+            android:text="@string/city_register"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/cityRegister"
+            android:layout_width="300sp"
+            android:layout_height="35sp"
+
+            android:layout_alignStart="@+id/cityRegisterTextView"
+            android:layout_below="@+id/cityRegisterTextView"
+            android:background="@drawable/login_password_drawable"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your city..."
+            android:inputType="text"
+            android:labelFor="@+id/EditTextLogin"
+            android:textColor="@color/white"
+            android:textColorHint="#ededed"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="300sp"
+            android:layout_height="1sp"
+            android:layout_alignBottom="@+id/cityRegister"
+            android:layout_alignStart="@+id/cityRegister"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="300sp"
+            android:layout_height="45sp"
+            android:layout_alignStart="@+id/cityRegister"
+            android:layout_below="@+id/cityRegister"
+            android:layout_marginTop="40sp"
+            android:background="@drawable/button_background2"
+            android:radius="100dp"
+            android:shadowColor="@color/blue"
+            android:text="@string/create_new_account"
+            android:textColor="@color/login"
+            android:textColorLink="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnRegisterBack"
+            android:layout_width="100sp"
+            android:layout_height="35sp"
+            android:layout_below="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40sp"
+            android:background="@drawable/button_background"
+            android:radius="100dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+</ScrollView>
